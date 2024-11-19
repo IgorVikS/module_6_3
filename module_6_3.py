@@ -22,7 +22,7 @@ class Animal:
         else:
             print("Be careful, i'm attacking you 0_0")
 class Bird(Animal):
-    beak = True # клюв есть
+    beak = True
     def lay_eggs(self):
         num_of_eggs = random.randint(1, 4)
         print (f"Here are(is) {num_of_eggs} eggs for you")
@@ -34,7 +34,7 @@ class AquaticAnimal(Animal):
 class PoisonousAnimal(Animal):
     _DEGREE_OF_DANGER = 8
 class Duckbill(PoisonousAnimal, Bird, AquaticAnimal):
-    sound = "Click-click-click" # утконос
+    sound = "Click-click-click"
     def __init__(self, speed):
         super().__init__(speed)
     def speak(self):
